@@ -1,0 +1,60 @@
+#!/bin/bash
+
+#Check if homebrew is installed and install if not
+if $(! $(which -s brew));then
+	echo "Installing homebrew …”;
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”;
+	brew doctor;
+fi
+
+brew update
+brew install wget
+brew install git
+brew install ffmpeg
+brew install lame
+brew install node
+brew install openssl
+brew install youtube-dl
+brew install htop
+brew install tree
+brew install cask
+
+brew cask install iterm2
+brew cask install vivaldi
+brew cask install google-chrome
+brew cask install cyberduck
+brew cask install the-unarchiver
+brew cask install pibakery
+brew cask install beyond-compare
+brew cask install visual-studio-code
+brew cask install airvpn
+brew cask install paintbrush
+brew cask install dropbox
+brew cask install google-drive
+brew cask install day-o
+brew cask install vlc
+brew cask install slack
+brew cask install airflow
+brew cask install vnc-viewer
+brew cask install steam
+brew cask install gitkraken
+brew cask install webtorrent
+brew cask install sublime-text
+brew cask install keybase
+
+#Install stuff that can only be installed though apple store
+brew install mas
+mas signin
+
+#install Xcode
+xcodeid=$(mas search Xcode | head -n 1 | cut -d" " -f1)
+mas install $xcodeid
+
+#install ToyViewer
+toyviewerid=$(mas search ToyViewer | head -n 1 | cut -d" " -f1)
+mas install $toyviewerid
+
+#install Caffeine
+caffeineid=$(mas search Caffeine | head -n 1 | cut -d" " -f1);
+mas install $caffeineid
+

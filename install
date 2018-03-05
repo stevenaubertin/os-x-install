@@ -21,7 +21,7 @@ brew install cask
 brew install docker
 
 brew cask install iterm2
-brew cask install vivaldi
+brew cask install brave
 brew cask install google-chrome
 brew cask install cyberduck
 brew cask install the-unarchiver

@@ -22,6 +22,10 @@ brew install tree
 brew install cask
 brew install docker
 
+# Live streamer
+brew install streamlink
+brew cask install streamlink-twitch-gui
+
 # PLEX Media Client
 #brew install ninja
 #brew install mpv --with-shared --HEAD

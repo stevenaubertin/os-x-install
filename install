@@ -18,6 +18,7 @@ brew install youtube-dl
 brew install htop
 brew install tree
 brew install cask
+brew install docker
 
 brew cask install iterm2
 brew cask install vivaldi

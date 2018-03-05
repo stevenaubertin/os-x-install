@@ -28,7 +28,6 @@ brew cask install the-unarchiver
 brew cask install pibakery
 brew cask install beyond-compare
 brew cask install visual-studio-code
-brew cask install airvpn
 brew cask install paintbrush
 brew cask install dropbox
 brew cask install google-drive

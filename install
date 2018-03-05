@@ -22,6 +22,14 @@ brew install tree
 brew install cask
 brew install docker
 
+# PLEX Media Client
+#brew install ninja
+#brew install mpv --with-shared --HEAD
+#mkdir build ; cd build
+#cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=output ..
+#ninja
+#ninja install
+
 brew cask install iterm2
 brew cask install brave
 brew cask install google-chrome

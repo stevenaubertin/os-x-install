@@ -1,5 +1,7 @@
 #!/bin/bash
 
+xcode-select --install
+
 #Check if homebrew is installed and install if not
 if $(! $(which -s brew));then
 	echo "Installing homebrew …”;
@@ -18,9 +20,21 @@ brew install youtube-dl
 brew install htop
 brew install tree
 brew install cask
+brew install docker
+
+# Live streamer
+brew install streamlink
+brew cask install streamlink-twitch-gui
+
+# PLEX Media Client
+#brew install ninja
+#brew install mpv --with-shared --HEAD
+#mkdir build ; cd build
+#cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=output ..
+#ninja
+#ninja install
 
 brew cask install iterm2
-brew cask install vivaldi
 brew cask install brave
 brew cask install google-chrome
 brew cask install cyberduck
@@ -28,7 +42,6 @@ brew cask install the-unarchiver
 brew cask install pibakery
 brew cask install beyond-compare
 brew cask install visual-studio-code
-brew cask install airvpn
 brew cask install paintbrush
 brew cask install dropbox
 brew cask install google-drive

@@ -51,6 +51,9 @@ brew cask install steam
 brew cask install webtorrent
 brew cask install sublime-text
 brew cask install keybase
+brew cask install postman
+brew cask install keybase
+brew cask install spotify
 
 #Install stuff that can only be installed though apple store
 brew install mas
@@ -67,4 +70,3 @@ mas install $toyviewerid
 #install Caffeine
 caffeineid=$(mas search Caffeine | head -n 1 | cut -d" " -f1);
 mas install $caffeineid
-

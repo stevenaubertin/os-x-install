@@ -2,6 +2,8 @@
 
 #Check if homebrew is installed and install if not
 if hash brew 2>/dev/null; then
+    echo "brew already installed"
+else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 

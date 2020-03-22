@@ -42,6 +42,7 @@ brew cask install sublime-text
 brew cask install postman
 brew cask install keybase
 brew cask install encryptr
+brew cask install powershell
 brew cask install spotify
 
 #Install stuff that can only be installed though apple store

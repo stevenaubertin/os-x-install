@@ -1,17 +1,12 @@
 #!/bin/bash
 
-xcode-select --install
-
 #Check if homebrew is installed and install if not
-if $(! $(which -s brew));then
-	echo "Installing homebrew …”;
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”;
-	brew doctor;
+if hash brew 2>/dev/null; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 brew update
 brew install wget
-brew install git
 brew install ffmpeg
 brew install lame
 brew install node
@@ -25,14 +20,6 @@ brew install docker
 # Live streamer
 brew install streamlink
 brew cask install streamlink-twitch-gui
-
-# PLEX Media Client
-#brew install ninja
-#brew install mpv --with-shared --HEAD
-#mkdir build ; cd build
-#cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=output ..
-#ninja
-#ninja install
 
 brew cask install iterm2
 brew cask install brave
@@ -50,7 +37,6 @@ brew cask install vnc-viewer
 brew cask install steam
 brew cask install webtorrent
 brew cask install sublime-text
-brew cask install keybase
 brew cask install postman
 brew cask install keybase
 brew cask install spotify
